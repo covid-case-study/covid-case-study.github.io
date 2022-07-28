@@ -18,7 +18,26 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				
+				
+				<!-- Example Plotly embed:
+				
+				<section>
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/8.embed" height="650" width="100%"></iframe>
+				</section> 
+				
+				-->
+				
+				<!-- Example image embed:
+				
+				<section>
+						<img src="/visualizations/Continent_ANOVA_Model.png" alt="ANOVA Modeling of Continents">
+				</section>
+				
+				-->
 			
+			
+
 				<section data-markdown>
 					<textarea data-template>
 						## COVID Case Study
@@ -54,7 +73,7 @@
 						</textarea>
 					</section>
 					
-					<section style="text-align: justify;">
+					<section>
 						<p>In the following visualization, we provide an overview of the results of ANOVA modeling for Continents. 
 						</p>
 					</section>
@@ -62,10 +81,24 @@
 						<img src="/visualizations/Continent_ANOVA_Model.png" alt="ANOVA Modeling of Continents">
 					</section>
 					
-					<section style="text-align: justify;">
-						<p>In the following visualization, we provide an overview of the results of ANOVA modeling for Continents.  
+					<section>
+						<p>In the following visualization, we provide an overview of the results of ANOVA modeling for Lockdown types.  
 						</p>
 					</section>
+					<section>
+						<img src="/visualizations/Lockdown_ANOVA_Model.png" alt="ANOVA Modeling of Lockdown Types">
+					</section>
+					
+					<section>
+						<h4>Potential Primary Factors</h4>
+						<p>One of the most interesting questions we hoped to answer with our chosen data was the effect of lockdowns – did they help individual countries to keep their COVID mortality rates down?  We used an ANOVA model to test three different categories of lockdown – full, partial, and none.  Interestingly, countries which employed a full lockdown had significantly higher COVID mortality rates (on average) than countries which had no lockdown whatsoever.  This may be a counterintuitive result, but considering that countries with more COVID deaths may have been more motivated to try to use lockdowns to stem the number of deaths than countries which weren’t affected as much early on by the disease, the result is not entirely surprising.
+						</p>
+						<p>We were also very interested in knowing how different continents fared when it came to COVID mortality rates.  Countries in South America and Europe had the highest COVID mortality rates on average.  North American countries had a lower mortality rate (on average) than South American and European countries, but a higher mortality rate (on average) than countries in Asia, Africa, and Oceania.  South America’s results may have been skewed by the country of Peru, which had a much higher rate of COVID deaths per million than was to be expected given its other variables (more on that later).  The countries of Europe, on the other hand, may have been more afflicted with COVID mortality – especially early on in the pandemic – due to relative amounts of international travel in and out of Europe (although this was not something we could directly measure with our dataset).
+						</p>
+					</section>
+					
+					
+					
 				</section>
 				
 				<section>
@@ -75,7 +108,7 @@
 						</textarea>
 					</section>
 					
-					<section style="text-align: justify;">
+					<section>
 						<p>In the following visualizations, we provide an overview of the results of linear models considering socioeconomic variables. 
 						</p>
 					</section>
@@ -86,37 +119,17 @@
 						<img src="/visualizations/Socioeconomic Linear Model 2.png" alt="Linear Model of Socioeconomic Variables">
 					</section>
 					
-					<section style="text-align: justify;">
+					<section>
 						<p>In the following visualization, we provide an overview of the results of a linear model considering comorbidity variables. 
 						</p>
 					</section>
 					<section>
-						<img src="/visualizations/Comorbidities Linear Model.png" alt="Linear Model of Socioeconomic Variables">
+						<img src="/visualizations/Comorbidities Linear Model.png" alt="Linear Model of Comorbidity Variables">
 					</section>
 
 					
 					
-					<section style="text-align: justify;">
-						<p>In the following visualizations, we present some regression plots of demographic factors and their relation to total deaths per million. 
-						</p>
-					</section>
-					<section>
-						<img src="/visualizations/na_eu_sa_demographic_regression.png" alt="Regression Analysis of Demographic Factors in North America, Europe, and South America">
-					</section>
-					<section>
-						<img src="/visualizations/af_as_oc_demographic_regression.png" alt="Regression Analysis of Demographic Factors in Africa, Asia, and Oceania">
-					</section>
 					
-					<section style="text-align: justify;">
-						<p>In the following visualizations, we showcase some regression plots of comorbidity-related factors and their relation to total deaths per million. 
-						</p>
-					</section>
-					<section>
-						<img src="/visualizations/na_eu_sa_comorbidity_regression.png" alt="Regression Analysis of Comorbidity Factors in North America, Europe, and South America">
-					</section>
-					<section>
-						<img src="/visualizations/af_as_oc_comorbidity_regression.png" alt="Regression Analysis of Comorbidity Factors in Africa, Asia, and Oceania">
-					</section>	
 				</section>
 				
 				<section>
@@ -132,62 +145,23 @@
 						</textarea>
 					</section>
 					
-					<section style="text-align: justify;">
-						<p>In the following visualization, we created a 3D scatterplot of KMean clusters based on socioeconomic variables. During our ANOVA testing and regression analysis research we found life expectancy, GDP per capita, and population density to be strong variables in determining which countries could be grouped together by socioeconomic status. From here, our goal is to then run ARIMA models on the different socioeconomic groupings in order to forecast the effect of COVID on different socioeconomic statuses.
-						</p>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/4.embed" height="650" width="100%"></iframe>
-					</section>
-					
-					
 					<section data-markdown>
 						<textarea data-template>
 							### COVID-Related Variables
 						</textarea>
 					</section>
-					<section style="text-align: justify;">
-						<p>In the following visualization, we created another 3D scatterplot of KMean clusters but this time based on some of the numeric COVID-related variables. We found that the percentage of people totally vaccinated as well as the total case and death numbers per million to be strong variables in determining which countries could be grouped together. From these groupings, we will run additional ARIMA models on the different groupings in order to forecast the effect of COVID on different countries based on the size of their vaccinated population.
-						</p>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/6.embed" height="650" width="100%"></iframe>
-					</section>
-					
-					
+								
 					<section data-markdown>
 						<textarea data-template>
 							### Comorbidity Variables
 						</textarea>
-					</section>
-					<section style="text-align: justify;">
-						<p>In the following visualization, we see yet another 3D plot which takes into consideration comorbidity variables. Among these variables, we found diabetes prevalance, cardiovascular death rate, and the percentage of the population that was over 65 years old to be variables that would aid us in determining which countries could be grouped together by the vulnerability of their populations. Like the previous slides, we will be running ARIMA models on these different comorbidity groupings in order to forecast the effect of COVID on populations with different levels of vulnerability.
-						</p>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/8.embed" height="650" width="100%"></iframe>
-					</section>
-					
-					
-					<section data-markdown>
-						<textarea data-template>
-							### Principle Component Analysis
-						</textarea>
-					</section>
-					<section style="text-align: justify;">
-						<p>In the following visualization, we created... wait for it... another 3D scatterplot of KMean clusters but this is different due to it being based on principle component analysis and not direct variables. We have yet to dig into what these different components might be or if we are even able to, however, we felt that representing the different ways we can approach feature selection with our data is valuable nonentheless.
-						</p>
-					</section>	
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/10.embed" height="650" width="100%"></iframe>
-					</section>
-									
+					</section>											
 				</section>
 				
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-							## Time-Series Analysis
+							## ARIMA
 						</textarea>
 					</section>
 					
@@ -197,33 +171,13 @@
 						</textarea>
 					</section>
 					
-					<section style="text-align: justify;">
-						<p>In the following visualization, we created a time series graph for each country in the Balkans. The Balkans is a region that had a rough time battling COVID with many outlier performances, therefore, we were interested in seeing how the pandemic waves affected the region and in which countries.
-						</p>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/13.embed" height="650" width="100%"></iframe>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/15.embed" height="650" width="100%"></iframe>
-					</section>
-					
+									
 					<section data-markdown>
 						<textarea data-template>
 							### South East Asia
 						</textarea>
 					</section>
 					
-					<section style="text-align: justify;">
-						<p>In the following visualization, we created a time series graph for each country in South East Asia. 
-						</p>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/19.embed" height="650" width="100%"></iframe>
-					</section>
-					<section>
-						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/17.embed" height="650" width="100%"></iframe>
-					</section>
 			</div>
 		</div>
 
