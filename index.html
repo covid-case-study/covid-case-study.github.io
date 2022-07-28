@@ -69,6 +69,49 @@
 				<section>
 					<section data-markdown>
 						<textarea data-template>
+							## Data
+						</textarea>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+						
+							Our primary dataset came from Our World In Data (OWID):
+
+							https://github.com/owid/covid-19-data/tree/master/public/data
+
+							We decided to use this dataset as OWID curates their data from reputable sources including research from Johns Hopkins University (JHU), the United Nations, the World Bank, and many others. Another major reason for using this dataset is the plethora of variables available for use in our analysis ranging from the number of confirmed cases and deaths on any given day, to testing, hospitalization, and vaccination rates, as well as many other demographic variables such as human development index and comorbidity factor indexes.							
+						
+						</textarea>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+						
+							Our first dataset involved looking at COVID deaths per million in individual countries as of June 8th, 2022.  Using this “snapshot” dataset, we wanted to see if categorical variables (such as whether or not a country imposed a lockdown) were associated with COVID mortality rates. We also desired to know if quantitative but “static” type variables (such as diabetes prevalence in a country or that country’s population density) had any relationship with how each country fared in keeping COVID deaths down.
+						
+						</textarea>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+						
+							Our second dataset involved looking at COVID deaths per million over time.  This time series data allowed us to see how different continuous variables were related to its COVID mortality rate. An important note with variables such as confirmed cases and deaths are that they are collected by date of report, rather than date of test/death. Therefore the number does not necessarily represent the actual number on a given date. This means that our data over time can show sudden changes (negative or positive) when a country corrects historical data, because it had previously under- or overestimated the number of cases/deaths. This plays an important part in our time-series analysis later. 
+							
+						</textarea>
+					</section>
+				
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Methods
+						</textarea>
+					</section>
+				</section>	
+					
+				<section>
+					<section data-markdown>
+						<textarea data-template>
 							### ANOVA
 						</textarea>
 					</section>
