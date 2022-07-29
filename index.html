@@ -149,13 +149,21 @@
 						<p>There were many quantitative variables of interest in our “snapshot” dataset, and we divided these variables into two groups – one concerning what we called comorbidities, the other concerning what we named socioeconomic factors.
 						</p>
 					</section>
+					
 					<section>
 						<p>The comorbidity variables were diabetes prevalence, cardiovascular death rate, and the percentage of the population aged 65 or older.  For these variables, a preliminary multivariable linear model was constructed. Due to problems with the residual errors, two outliers were removed and a natural logarithm transformation of the response variable – namely, COVID deaths per million – was done in order to create the final model.  The two outliers were Peru (with a much higher COVID mortality rate than the preliminary model suggested) and Japan (with a much lower COVID mortality rate than the preliminary model predicted). 
 						</p>
 					</section>					
 					<section>
 						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/22.embed" height="650" width="100%"></iframe>
-					</section> 				
+					</section>
+					<section>
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/24.embed" height="650" width="100%"></iframe>
+					</section> 
+					<section>
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/26.embed" height="650" width="100%"></iframe>
+					</section> 
+					
 					<section>
 						<p>We found in the final model, which was moderately strong in explaining the variance in log-transformed COVID mortality rates, that the percentage of the population aged 65 or older and the prevalence of diabetes were both highly significant factors in the model.  An increase in either of those explanatory variables was associated with an increase in the log-transformed COVID mortality rate.  Contrastingly, cardiovascular death rate was not significant.
 						</p>
@@ -168,14 +176,23 @@
 						<p>The socioeconomic variables were population density, life expectancy, and GDP per capita.  For these variables, a preliminary multivariable linear model was constructed. For the preliminary model using population density, life expectancy, and GDP per capita as factors, three outliers were removed and a natural logarithm transformation of the response variable (COVID deaths per million) was done due to problems with the residual errors.  This became the final version of this model.  The three outliers were Peru, Bulgaria, and Hungary – all with a higher COVID mortality rate than the preliminary model predicted.  
 						</p>
 					</section>
-					
 					<section>
-						<img src="/visualizations/Socioeconomic Linear Model 2.png" alt="Linear Model of Socioeconomic Variables">
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/28.embed" height="650" width="100%"></iframe>
 					</section>
+					<section>
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/30.embed" height="650" width="100%"></iframe>
+					</section> 
+					<section>
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/32.embed" height="650" width="100%"></iframe>
+					</section> 
+					
 					
 					<section>
 						<p>We found in the final model, which was moderately strong in explaining the variance in log-transformed COVID mortality rates, life expectancy was a highly significant factor in the model while population density was only a moderate factor in the model (0.05 &lt; p &lt; 0.1).  An increase in life expectancy was associated with an increase in the log-transformed COVID mortality rate, while an increase in population density was associated with a decrease in the log-transformed COVID mortality rate.  These results may be explained by the same reasoning given in the previous paragraph.
 						</p>
+					</section>
+					<section>
+						<img src="/visualizations/Socioeconomic Linear Model 2.png" alt="Linear Model of Socioeconomic Variables">
 					</section>
 					
 
