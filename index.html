@@ -212,27 +212,32 @@
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-							## Cluster Analysis
+							## Kmeans Clustering
 						</textarea>
 					</section>
 					
-					<section data-markdown>
-						<textarea data-template>
-							### Socioeconomic Variables
-						</textarea>
+					
+					<section>
+						<p>KMeans clustering analysis was performed on the snapshot dataset using socioeconomic, comorbidity and COVID totals variables as well as principal component analysis. The data was scaled using MinMaxScaler and the optimal number of clusters for the data in question was arrived at by use of a silhouette score analysis as well as an elbow chart. 
+						</p>
 					</section>
 					
-					<section data-markdown>
-						<textarea data-template>
-							### COVID-Related Variables
-						</textarea>
+					<section>
+						<p>For the socioeconomic data (life expectancy, GDP per capita, population density) the optimal number of clusters arrived at was 4. The data clustered nicely in an easy to interpret format, but the overall scatterplot was slightly crunched due to some outlier countries with higher life expectancy and population density than the rest. 						
+						</p>
 					</section>
-								
-					<section data-markdown>
-						<textarea data-template>
-							### Comorbidity Variables
-						</textarea>
-					</section>											
+					
+					<section>
+						<p>For the comorbidity related data(population 65 years and older, cardiovascular death rate and diabetes prevalence), the optimal number of clusters arrived at was 7. The clusters make sense in that it is easy to see countries in Africa, Asia and Latin America with younger populations clustering together as well as North American and and northern European countries with older populations and higher comorbidity rates clustering together. It was interesting to see that many Pacific island nations have very high cardiovascular death rates and diabetes prevalence, and the clustering highlighted that fact.						
+						</p>
+					</section>
+					
+					<section>
+						<p>Finally, a cluster analysis on the COVID related data (total deaths per million, total cases per million, total vaccinations per hundred) was probably the most useful out of the analyses conducted. The optimal number of clusters arrived at was actually 3 but we chose the second highest silhouette score at 8 clusters for visual effect and to call out outliers. The outliers Peru, Macedonia, Bulgaria, Hungary and Bosnia and Herzegovina were all encompassed in one cluster. It was also interesting to see how smaller countries, especially island nations with high vaccination rates, were able to keep their cases and deaths down.
+						</p>
+					</section>
+					
+															
 				</section>
 				
 				<section>
