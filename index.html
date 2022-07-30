@@ -284,31 +284,40 @@
 					
 					<section>
 						<p>
-							We chose our target variable for the model as new deaths smoothed per million. We hoped to show a relation between spikes in new deaths and changes in our exogenous variables. We used the smoothed data, which is a rolling seven day average because the variance in day to day data was very extreme. This also should help anomalies in the way different countries report their data from being too impactful.
+							We chose our target variable for the model as new deaths smoothed per million. We hoped to show a relation between spikes in new deaths and changes in our exogenous variables. We used the smoothed data, which is a rolling seven day average because the variance in day to day data was very extreme. This also should help anomalies in the way different countries report their data from being too impactful.						
 						</p>
 					</section>	
 					
 					<section>
 						<p>
-							For our exogenous variables, we looked at four variables: ‘people fully vaccinated per million’, ‘reproduction rate’ (real-time estimate of the effective reproduction rate of the virus), ‘icu patients per million’, and ‘hospital patients per million’.
+							For our exogenous variables, we looked at four variables: ‘people fully vaccinated per million’, ‘reproduction rate’ (real-time estimate of the effective reproduction rate of the virus), ‘icu patients per million’, and ‘hospital patients per million’. 
 						</p>
 					</section>	
 					
 					<section>
 						<p>
-							People fully vaccinated is the exogenous variable we were most interested in. We hoped to show that as the number of people vaccinated increased that the number of deaths would decrease. We should see the inverse of this with Hospital and ICU patients. As their values increase we should see an increase in the number of new deaths.
+							People fully vaccinated is the exogenous variable we were most interested in. We hoped to show that as the number of people vaccinated increased that the number of deaths would decrease. We should see the inverse of this with Hospital and ICU patients. As their values increase we should see an increase in the number of new deaths. For an example of the model and how we would analyze these hypotheses, we will take a look at Peru's model results:						
+						</p>
+					</section>	
+					
+					
+					<section>
+						<img src="/visualizations/peru_arima_summary.png" alt="Peru COVID ARIMA Model Summary">
+					</section>
+					
+					<section>
+						<img src="/visualizations/peru_arima_diagnostics.png" alt="Peru COVID ARIMA Model Plot Diagnostics">
+					</section>
+					
+					<section>
+						<p>
+							As shown in the above visualizations, the <em>p</em> values of our exogenous variables were very high. This means that in relation to the other variables, in our case the auto regressor (AR) and moving average (MA) values, our exogenous variables were not as useful when predicting the daily new deaths of a country. We attempted to see if any of the coefficients for each variable were consistent across the but we were not of any statistical significance. The only significance as mentioned earlier were the AR and MA values which essentially indicates that data on any given date is more dependent on the results of previous days rather than any of our specific exogenous variables. 
 						</p>
 					</section>	
 					
 					<section>
 						<p>
-							However, The P values of our exogenous variables were very high. This means that in relation to the other variables, in our case the auto regressor (AR) and moving average (MA) values, our exogenous variables were not as useful when predicting the daily new deaths of a country. We attempted to see if any of the coefficients for each variable were consistent across the specfic regions but they were not of any statistical significance. 
-						</p>
-					</section>	
-					
-					<section>
-						<p>
-							The only significance, as mentioned earlier were the AR and MA values which essentially indicates that data on any given date is more dependent on the results of previous days rather than any of our specific exogenous variables. From this knowledge, we became curious if forecasting was possible, but we came to the realization that forecasting COVID data is difficult due to reporting lag as well as unpredictability of when a new variant would emerge.
+							By mapping our coefficients against the total number of people fully vaccinated, we can see if there is a relation between them across all of the countries we made models for. Ideally, we would see that there is a negative correlation between the number of people fully vaccinated and the coefficients our models gave us. Seeing a trend would show us that vaccinations had an impact overall. However, in our visualizations, we do not see any trends. This does not mean that vaccinations are not effective, just not as important to our models as other variables. In our case, the AR and MA values, which are related to the deaths of the previous days, are far more important in predicting the next day’s deaths.
 						</p>
 					</section>	
 				</section>
@@ -322,14 +331,7 @@
 					</section>
 				</section>
 				
-				<!-- SOURCES -->
-				<section>
-					<section data-markdown>
-						<textarea data-template>
-							## Sources
-						</textarea>
-					</section>
-				</section>
+				
 				
 			</div>
 		</div>
