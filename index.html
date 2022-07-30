@@ -311,13 +311,17 @@
 					
 					<section>
 						<p>
-							As shown in the above visualizations, the <em>p</em> values of our exogenous variables were very high. This means that in relation to the other variables, in our case the auto regressor (AR) and moving average (MA) values, our exogenous variables were not as useful when predicting the daily new deaths of a country. We attempted to see if any of the coefficients for each variable were consistent across the but we were not of any statistical significance. The only significance as mentioned earlier were the AR and MA values which essentially indicates that data on any given date is more dependent on the results of previous days rather than any of our specific exogenous variables. 
+							As shown in the above visualizations, the p values of our exogenous variables were very high. values of our exogenous variables were very high. This means that in relation to the other variables, in our case the auto regressor (AR) and moving average (MA) values, our exogenous variables were not as useful when predicting the daily new deaths of a country. The only significance as mentioned earlier were the AR and MA values which essentially indicates that data on any given date is more dependent on the results of previous days rather than any of our specific exogenous variables. 	
 						</p>
 					</section>	
 					
 					<section>
+						<iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="https://plotly.com/~aidan2b/55.embed" height="650" width="100%"></iframe>
+					</section> 
+					
+					<section>
 						<p>
-							By mapping our coefficients against the total number of people fully vaccinated, we can see if there is a relation between them across all of the countries we made models for. Ideally, we would see that there is a negative correlation between the number of people fully vaccinated and the coefficients our models gave us. Seeing a trend would show us that vaccinations had an impact overall. However, in our visualizations, we do not see any trends. This does not mean that vaccinations are not effective, just not as important to our models as other variables. In our case, the AR and MA values, which are related to the deaths of the previous days, are far more important in predicting the next day’s deaths.
+							By mapping our coefficients against the total number of people fully vaccinated, we can see if there is a relation between them across all of the countries we made models for. Ideally, we would see that there is a negative correlation, which would show us that vaccinations had an impact overall. In our visualizations, we do not see any trends which does not mean that vaccinations are not effective, just not as important to our models as other variables. In our case, the AR and MA values are far more important in predicting the next day’s deaths.		
 						</p>
 					</section>	
 				</section>
