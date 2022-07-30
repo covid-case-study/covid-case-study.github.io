@@ -312,7 +312,7 @@
 					
 					<section>
 						<p>
-							In the following slide, we see plot diagnostics for Peru's ARIMA Model. In the top left plot, the residual errors seem to fluctuate around a mean of zero but at random intervals have major spikes due to the introduction of new variants. The histogram plus density plot on the top right shows a slight skew towards the right with our data. This is also indicated by the Q-Q plot on the bottom left by the tail on the right skewing upwards. The ACF plot in the bottom right shows the residual errors are autocorrelated. Any autocorrelation would imply that there is some pattern in the residual errors which are not explained in the model. So you will need to look for more predictors to the model. We are keen to believe that these residual errors not explained by the model are factors that may be external to the dataset overall. 
+							In the following slide, we see plot diagnostics for Peru's ARIMA Model. In the top left plot, the residual errors seem to fluctuate around a mean of zero but at random intervals have major spikes due to the introduction of new variants. The histogram plus density plot on the top right shows a slight skew towards the right with our data. This is also indicated by the Q-Q plot on the bottom left by the tail on the right skewing upwards. The ACF plot in the bottom right shows the residual errors are autocorrelated. Any autocorrelation indicates there is some pattern in the residual errors which are not explained in the model. 
 						</p>
 					</section>	
 					
@@ -345,6 +345,29 @@
 							## Conclusions
 						</textarea>
 					</section>
+					
+					<section>
+						<h3>Primary Factors Influencing COVID Mortality in Individual Countries</h3>
+
+						<p>
+							The primary factors we identified which are associated with COVID mortality rate in different countries are as follows: type of lockdown, life expectancy, continent, diabetes prevalence, and percentage of the population who are 65 years of age or older.  For more details, please refer to the other slides that make up this website.
+						</p>
+					</section>	
+					
+					<section>
+						<h3>Interactions Among Primary Factors & Relative Strength of Models</h3>
+						<p>
+							In order to minimize interactions among the explanatory variables which might influence COVID mortality rate, we decided to use smaller models, each of which focused on one type of variable.  We used two separate ANOVA models for our two chosen categorical variables, for example.  As another example, we had a model focusing solely on comorbidity factors.  Although smaller linear models tend to have smaller R2 values, we found the models to still be moderately strong.  These smaller models are also easier to understand because they are appropriately focused.
+						</p>
+					</section>
+
+					<section>
+						<p>
+							It should be noted that we left certain variables out in our linear models because of their high correlations with other variables.  We didn’t use a variable measuring the percentage of the population who are 70 years of age or older because it was highly correlated with the variable measuring the percentage of the population who are 65 years of age or older.  We also left out a variable measuring human development index because of its high correlation with life expectancy, the latter variable being a much less complex variable (hence easier to understand).						
+						</p>
+					</section>	
+					
+					
 				</section>
 				
 				
