@@ -296,14 +296,25 @@
 					
 					<section>
 						<p>
-							People fully vaccinated is the exogenous variable we were most interested in. We hoped to show that as the number of people vaccinated increased that the number of deaths would decrease. We should see the inverse of this with Hospital and ICU patients. As their values increase we should see an increase in the number of new deaths. For an example of the model and how we would analyze these hypotheses, we will take a look at Peru's model results:						
+							People fully vaccinated is the exogenous variable we were most interested in. We hoped to show that as the number of people vaccinated increased that the number of deaths would decrease. We should see the inverse of this with Hospital and ICU patients. As their values increase we should see an increase in the number of new deaths.
 						</p>
 					</section>	
 					
+					<section>
+						<p>
+							Pictured below are the ARIMA results for one of our outliers, Peru. The green areas are where we found significance due to these variables having p values of less than .05. As you can see, these are only the Autoregressive (AR) and Moving Average (MA) portions of the ARIMA model indicating that the recently passed results for a day have a higher effect on the next day than any of the exogenous variables we had entered. 
+						</p>
+					</section>	
 					
 					<section>
 						<img src="/visualizations/peru_arima_summary.png" alt="Peru COVID ARIMA Model Summary">
 					</section>
+					
+					<section>
+						<p>
+							In the following slide, we see plot diagnostics for Peru's ARIMA Model. In the top left plot, the residual errors seem to fluctuate around a mean of zero but at random intervals have major spikes due to the introduction of new variants. The histogram plus density plot on the top right shows a slight skew towards the right with our data. This is also indicated by the Q-Q plot on the bottom left by the tail on the right skewing upwards. The ACF plot in the bottom right shows the residual errors are autocorrelated. Any autocorrelation would imply that there is some pattern in the residual errors which are not explained in the model. So you will need to look for more predictors to the model. We are keen to believe that these residual errors not explained by the model are factors that may be external to the dataset overall. 
+						</p>
+					</section>	
 					
 					<section>
 						<img src="/visualizations/peru_arima_diagnostics.png" alt="Peru COVID ARIMA Model Plot Diagnostics">
